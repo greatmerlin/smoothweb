@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
-//import { Link as LinkS } from 'react-scroll';
+import { Link as LinkS } from 'react-scroll';
 
 // you write here typical css
 //with the media, the nav bar will trigger from 960px and above
@@ -48,5 +48,64 @@ align-items: center;
 margin-left: 24px;
 font-weight: bold;
 text-decoration: none;
+
+`
+
+export const MobileIcon = styled.div`
+
+display: none;
+
+@media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+`
+
+// FaBars is an Icon that we will import
+
+export const NavMenu = styled.ul`
+
+display: flex;
+align-items: center;
+list-style: none;
+text-aligh: center;
+margin-right: -22px;
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
+
+`
+
+export const NavItem = styled.li`
+
+heigth: 80px;
+
+`
+
+// border bottom is for the highlighting on the bottom of each item 
+// when the cursor is there
+
+export const NavLinks = styled(LinkS)`
+
+color: #fff;
+display: flex;
+align-items: center;
+text-decoration: none;
+padding: 0 1rem;
+height: 100%
+cursor: pointer;
+margin-right: 1rem;
+
+&.active {
+    border-bottom: 3px solid #01bf71;
+}
 
 `
