@@ -39,7 +39,7 @@ max-width: 1100px;
 
 export const NavLogo = styled(LinkR)`
 
-colour: #fff;
+color: #01bf71;
 justify-self: flex-start;
 cursor: pointer;
 font-size: 1.5em;
@@ -102,10 +102,44 @@ text-decoration: none;
 padding: 0 1rem;
 height: 100%
 cursor: pointer;
-margin-right: 1rem;
 
 &.active {
     border-bottom: 3px solid #01bf71;
+}
+
+`
+
+export const NavBtn = styled.nav`
+
+display: flex;
+align-items: center;
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
+
+`
+
+// border-radius -> make it round
+
+export const NavBtnLink = styled(LinkR)`
+
+border-radius: 50px;
+background: #01bf71;
+white-space: nowrap;
+padding: 10px 22px;
+color: #010606;
+font-size: 16px;
+align:none;
+border: none;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+
+&.hover {
+    transition: all 0.2s ease-in-out;;
+    background: #fff;
+    color: #010606;
 }
 
 `
