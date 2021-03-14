@@ -26,10 +26,10 @@ const Navbar = ({toggle}) => {
               <NavLinks to="about">About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover">Discover</NavLinks>
+              <NavLinks to="memocoin">Memo Coin</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services">Services</NavLinks>
+              <NavLinks to="tutorial">How to play</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="signup">Sign up</NavLinks>

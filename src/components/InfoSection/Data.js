@@ -45,7 +45,7 @@ export const homeObjThree = {
     buttonLabel: 'Check the tutorial',
     imgStart: false,
     img: require('../../images/svg-7.svg').default,
-    alt: 'Cards',
+    alt: 'tutorial',
     dark: true,
     primary: true,
     darkText: false
