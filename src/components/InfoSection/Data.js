@@ -18,7 +18,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-    id: 'coin',
+    id: 'memocoin',
     lightBg: true, 
     lightText: false,
     lightTextDesc: false,
