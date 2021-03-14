@@ -39,7 +39,7 @@ max-width: 1100px;
 
 export const NavLogo = styled(LinkR)`
 
-color: #3399ff;
+color: #01bf71;
 justify-self: flex-start;
 cursor: pointer;
 font-size: 1.5em;
@@ -104,7 +104,7 @@ height: 100%
 cursor: pointer;
 
 &.active {
-    border-bottom: 3px solid #3399ff;
+    border-bottom: 3px solid #01bf71;
 }
 
 `
@@ -125,7 +125,7 @@ align-items: center;
 export const NavBtnLink = styled(LinkR)`
 
 border-radius: 50px;
-background: #3399ff;
+background: #01bf71;
 white-space: nowrap;
 padding: 10px 22px;
 color: #010606;
