@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "../ButtonElement";
-import { ReactComponent as ImageCards } from "../../images/svg-1.svg";
 import {
   InfoContainer,
   InfoWrapper,
@@ -62,12 +61,7 @@ const InfoSection = ({
             </Column1>
             <Column2>
               <ImgWrap>
-                <ImageCards
-                  style={{
-                    width: `100%`,
-                    height: `10%`,
-                  }}
-                />
+                <Img src={img} alt={alt} style={{width: `100%`}}/>
               </ImgWrap>
             </Column2>
           </InfoRow>
