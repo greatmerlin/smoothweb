@@ -65,8 +65,7 @@ const InfoSection = ({
                 <ImageCards
                   style={{
                     width: `100%`,
-                    margin: `0 0 10px 0`,
-                    paddingRight: 0,
+                    height: `10%`,
                   }}
                 />
               </ImgWrap>

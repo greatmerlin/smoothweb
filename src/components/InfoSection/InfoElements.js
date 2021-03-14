@@ -83,7 +83,7 @@ line-height: 1.1;
 font-weight: 600;
 color: ${({lightText}) => (lightText ? '#f7f8f8' : '#010606')};
 
-@media screen and (max-width. 480px) {
+@media screen and (max-width: 480px) {
     font-size: 32px;
 };
 
