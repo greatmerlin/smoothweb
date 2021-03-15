@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars } from 'react-icons/fa';
+import {IconContext} from 'react-icons/lib'
 import {
   Nav,
   NavbarContainer,
@@ -13,9 +14,25 @@ import {
 } from "./NavbarElements";
 
 const Navbar = ({toggle}) => {
+
+  const [scrollNav, setscrollNav] = useState(false);
+
+  const changeNav = () => {
+    if(window.scrollY >= 80) {
+      setscrollNav(true);
+    } else {
+      setscrollNav(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, [])
+  
   return (
     <>
-      <Nav>
+    <IconContext.Provider value={ {color: '#01bf71'}}>
+      <Nav scrollNav={scrollNav} >
         <NavbarContainer>
           <NavLogo to="/">MemoryUP</NavLogo>
           <MobileIcon onClick={toggle}>
@@ -40,6 +57,7 @@ const Navbar = ({toggle}) => {
           </NavBtn>
         </NavbarContainer>
       </Nav>
+      </IconContext.Provider>
     </>
   );
 };
