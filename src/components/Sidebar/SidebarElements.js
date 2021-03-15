@@ -29,7 +29,7 @@ color: #fff;
 
 export const Icon = styled.div`
 
-position: absolut;
+position: absolute;
 top: 1.2rem;
 right: 1.5rem;
 background: transparent;

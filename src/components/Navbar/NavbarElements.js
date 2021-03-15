@@ -6,19 +6,19 @@ import { Link as LinkS } from 'react-scroll';
 //with the media, the nav bar will trigger from 960px and above
 export const Nav = styled.nav`
 
-background: #000;
+background: ${({scrollNav}) => (scrollNav ? '#000' : 'trasparent')};
 height: 80px;
 margin-top: -80px;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 1em;
+font-size: 1rem;
 position: sticky;
 top: 0;
 z-index: 10;
 
 @media screen and (max-width: 960px) {
-    transition: 0.8 all ease;
+    transition: 0.8s all ease;
 }
 
 `

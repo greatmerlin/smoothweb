@@ -15,12 +15,12 @@ import {
 const Services = () => {
   return (
     <ServicesContainer id="services">
-      <ServicesH1>Our Services</ServicesH1>
+      <ServicesH1>Hall of Fame</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesH2>Check the leaderboard</ServicesH2>
-          <ServicesP>This is the hall of fame section</ServicesP>
+          <ServicesH2>Roadmap</ServicesH2>
+          <ServicesP>This is the roadmap of our company.  </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
@@ -29,9 +29,9 @@ const Services = () => {
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesH2>Tokenomics</ServicesH2>
+          <ServicesH2>Leaderboard</ServicesH2>
           <ServicesP>
-            Learn more about the coin
+          his is the hall of fame section
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>
